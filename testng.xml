@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="8" name="Test" parallel="methods">
+  <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="SessionSel.Parallel">
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="test1">
+  <parameter name="browsername" value="firefox"/>
+  <classes>
+  <!-- <class name="SessionSel.Parallel"/>-->
+  <class name="SessionSel.SauceDemo"></class>
+    <class name="Assignment.demoqaButtons"></class>
+  
+  </classes> 
+  </test>
+</suite> <!-- Suite -->
