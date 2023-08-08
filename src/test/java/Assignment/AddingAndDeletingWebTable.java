@@ -1,6 +1,12 @@
 package Assignment;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
@@ -21,7 +27,7 @@ public class AddingAndDeletingWebTable {
 	
 	
 	@Test
-	public void newAddRecord()
+	public void newAddRecord() throws IOException
 	{
 		driver.findElement(By.id("addNewRecordButton")).click();
 		driver.findElement(By.id("firstName")).sendKeys("jon");
@@ -37,9 +43,7 @@ public class AddingAndDeletingWebTable {
 		driver.findElement(By.xpath("//*[@type='submit']")).click();
 
 
-
-		
-
+;
 	}
 
 }

@@ -27,7 +27,7 @@ public class DatePicker {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(180));
 	}
 
-	@Test
+	@Test()
 	public void datePicker() {
 
 		driver.findElement(By.id("firstName")).sendKeys("jon");

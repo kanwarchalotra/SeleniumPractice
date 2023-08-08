@@ -1,4 +1,4 @@
-package SessionSel;
+ package SessionSel;
 
 import java.time.Duration;
 
@@ -47,6 +47,8 @@ public class JavScriptexecutora {
 				js.executeScript("document.getElementById('password').value='secret_sauce';");
 
 		js.executeScript("document.getElementById('password').value='secret_sauce';");
+	
+
 	}
 	
 	
@@ -78,13 +80,9 @@ public class JavScriptexecutora {
 		 */
 		String title=js.executeScript("return document.title").toString();
 		String url=js.executeScript("return document.URL").toString();
-System.out.println(title);
-System.out.println(url);
-		
-	}
-
-	
-	
+        System.out.println(title);
+        System.out.println(url);	
+	}	
 	@Test
 	public void sauceLab()
 	{
